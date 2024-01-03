@@ -10,7 +10,7 @@ public class Max {
     }
 
     public static void main(String[] args) {
-        int result = max(5,6);
+        int result = max(5, 6);
         System.out.println(result);
     }
 }
