@@ -37,4 +37,34 @@ class SwitchArrayTest {
         int[] expected = {1};
         assertThat(result).containsExactly(expected);
     }
+
+    @Test
+    void whenSwap0to3() {
+        int[] input = {1, 2, 3, 4};
+        int source = 0;
+        int destination = input.length - 1;
+        int[] result = SwitchArray.swap(input, source, destination);
+        int[] expected = {4, 2, 3, 1};
+        assertThat(result).containsExactly(expected);
+    }
+
+    @Test
+    void whenSwap1to8() {
+        int[] input = {2, 5, 7, 4, 6, 8, 5, 89, 23, 46};
+        int source = 1;
+        int destination = 8;
+        int[] result = SwitchArray.swap(input, source, destination);
+        int[] expected = {2, 23, 7, 4, 6, 8, 5, 89, 5, 46};
+        assertThat(result).containsExactly(expected);
+    }
+
+    @Test
+    void whenSwap3to5() {
+        int[] input = {13, 21, 56, 15, 23, 12, 17, 44, 23, 46};
+        int source = 3;
+        int destination = 5;
+        int[] result = SwitchArray.swap(input, source, destination);
+        int[] expected = {13, 21, 56, 12, 23, 15, 17, 44, 23, 46};
+        assertThat(result).containsExactly(expected);
+    }
 }
