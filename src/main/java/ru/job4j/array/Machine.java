@@ -9,10 +9,10 @@ public class Machine {
         int[] result = new int[100];
         int size = 0;
         int i = 0;
-        int balance = money - price;
-        while (balance > 0) {
-            if (balance >= coins[i]) {
-                balance -= coins[i];
+        money -= price;
+        while (money > 0) {
+            if (money >= coins[i]) {
+                money -= coins[i];
                 result[size] = coins[i];
                 size++;
             } else {
