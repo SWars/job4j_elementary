@@ -20,7 +20,6 @@ public class MathCalculator {
     }
 
     public static void main(String[] args) {
-
         System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
         System.out.println("Сумма разности и деления двух чисел равна: " + sumSubtractionAndDivision(20, 10));
         System.out.println("Сумма всех математических операций равна: " + sumMathOperation(20, 10));
